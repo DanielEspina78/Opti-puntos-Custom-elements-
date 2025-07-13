@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="opti-puntos.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      #camara-container {
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+        border: 4px solid #198754;
+        border-radius: 10px;
+        overflow: hidden;
+        zoom: 30%;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+      }
+
+      #camara {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-5">
+        <opti-punto id="optipunto" imagen="fachada.png"></opti-punto>
+      </div>
+      <div class="col-7">
+        <div
+          style="
+            max-width: 500px;
+            font-family: Arial, sans-serif;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #f9f9f9;
+          "
+        >
+          <div>
+            <strong>👷 Ingeniero:</strong> Buenas tardes, noté que uno de los
+            ladrillos sobre la puerta está flojo (PUNTO 1).
+          </div>
+          <div>
+            <strong>🏡 Dueño:</strong> Ah, sí... últimamente se escucha un ruido
+            raro cuando hay viento fuerte.
+          </div>
+          <div>
+            <strong>👷 Ingeniero:</strong> Exactamente, es ese ladrillo el que
+            vibra. Puede representar un riesgo a mediano plazo.
+          </div>
+          <div><strong>🏡 Dueño:</strong> ¿Se puede caer?</div>
+          <div>
+            <strong>👷 Ingeniero:</strong> No de inmediato, pero si sigue así
+            con cambios térmicos, podría desprenderse.
+          </div>
+          <div>
+            <strong>🏡 Dueño:</strong> ¿Cuál sería la solución más recomendable?
+          </div>
+          <div>
+            <strong>👷 Ingeniero:</strong> Retirarlo, limpiar el área y volver a
+            colocarlo con mezcla fresca. No lleva más de una hora.
+          </div>
+          <div>
+            <strong>🏡 Dueño:</strong> ¿Necesito permiso o es algo menor?
+          </div>
+          <div>
+            <strong>👷 Ingeniero:</strong> Es una reparación menor, no requiere
+            permisos, pero sí debe hacerlo alguien con experiencia.
+          </div>
+          <div>
+            <strong>🏡 Dueño:</strong> Perfecto, ¿cuándo podríamos hacerlo?
+          </div>
+          <div>
+            <strong>🏡 Dueño:</strong> Noto que hay otro, se lo marco (PUNTO 2)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="camara-container">
+      <video id="camara" autoplay playsinline></video>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

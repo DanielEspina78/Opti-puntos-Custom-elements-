@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="opti-puntos.js"></script>
+    <style>
+      #camara-container {
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+        border: 4px solid #198754;
+        border-radius: 10px;
+        overflow: hidden;
+        zoom: 30%;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+      }
+
+      #camara {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <opti-punto id="optipunto" imagen="optibot.jpg"></opti-punto>
+
+    <div id="camara-container">
+      <video id="camara" autoplay playsinline></video>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
